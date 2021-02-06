@@ -59,7 +59,8 @@ app.get('/data', (req, res) => {
         nombre: 'juan',
         apellido: 'nose',
         //req.url: obtengo la url pasada por parametro
-        url: req.url
+        url: req.url,
+        port
     }
 
     //Automaticamente res.send detecta que es un objeto, lo serializara con JSON.stringify y lo muestra 
