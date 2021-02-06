@@ -1,0 +1,26 @@
+
+
+
+<!-- Aca llamamos el partial creado head -->
+{{> head }}
+
+
+<body>
+
+    <!-- Aca llamamos el partial creado navbar -->
+    {{> navbar}}
+
+
+    <div class="jumbotron">              <!-- Paso por parametros a la funcion creada en helper -->
+        <h1 class="display-4">Hello, {{ capitalizar 'juan carlos javier bugallo'}}!</h1>
+                                        <!-- Paso por parametros a la funcion creada en helper la variable que creamos en server.js -->
+        <h1 class="display-4">Hello, {{ capitalizar nombre}}!</h1>
+        <p class="lead">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+        <hr class="my-4">
+        <p>This is some text.</p>
+        <p class="lead">This is another text.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button"> Learn More</a>
+    </div>
+
+
+    {{> footer}}
